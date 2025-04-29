@@ -1,7 +1,6 @@
-version: '3'
 services:
   go-service:
-    build: ./go-service
+    build: .
     container_name: go-service-container
     ports:
       - "8081:8081"
