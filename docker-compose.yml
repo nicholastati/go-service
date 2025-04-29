@@ -4,4 +4,4 @@ services:
     build: ./go-service
     container_name: go-service-container
     ports:
-      - "8081:8080"
+      - "8081:8081"
