@@ -2,7 +2,6 @@
 FROM golang:1.22-alpine AS builder
 WORKDIR /app
 COPY go.mod ./
-COPY go.sum ./ 2>/dev/null || :
 RUN go mod download
 COPY . .
 RUN go build -o go-service main.go
