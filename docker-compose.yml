@@ -1,0 +1,17 @@
+version: '3'
+services:
+  songkran-app:
+    image: songkran-web
+    container_name: songkran-container
+    ports:
+      - "8081:80"
+  survey-app:
+    build: ./survey-app
+    container_name: survey-container
+    ports:
+      - "8083:80"
+  go-service:
+    build: ./go-service
+    container_name: go-service-container
+    ports:
+      - "8081:8080"
